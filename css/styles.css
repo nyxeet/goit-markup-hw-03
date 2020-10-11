@@ -1,0 +1,340 @@
+:root {
+  --secondary-text-color: #757575;
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--primary-text-color);
+}
+/* Утилиты */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid #ececec;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  color: var(--primary-text-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo span {
+  color: var(--accent-color);
+}
+
+/* Site nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link-right {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link-right:hover,
+.site-nav .link-right:focus {
+  color: var(--accent-color);
+}
+.right-nav {
+  margin-left: auto;
+}
+
+/* Hero */
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+}
+.hero .title {
+  padding-top: 200px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .button {
+  display: inline-block;
+  padding: 10px 32px;
+  margin-bottom: 210px;
+  border-radius: 4px;
+  color: white;
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.hero .button:hover,
+.hero .button:focus {
+  color: var(--accent-color);
+  background-color: white;
+}
+
+/* Features */
+.features-list {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.features-list .title {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--secondary-text-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
+
+/* Portfolio */
+
+.portfolio .title {
+  margin-bottom: 50px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio .list {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Team */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  padding-top: 94px;
+  margin-top: 94px;
+  margin-bottom: 0;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list {
+  display: flex;
+  margin-top: 50px;
+}
+.team-item {
+  background-color: white;
+  margin-bottom: 94px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list .name {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+.team-list .role {
+  margin-bottom: 30px;
+  margin-top: 0px;
+  color: var(--secondary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #2f303a;
+}
+.footer .address {
+  margin-top: 20px;
+  margin-bottom: 9px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+.f-cont {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer .info {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.footer .logo {
+  color: #fff;
+}
+
+/* PORTFOLIO.html */
+.p-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+  margin-top: 100px;
+}
+
+.p-buttons .button {
+  font-family: Roboto;
+  padding: 6px 22px;
+  margin-right: 8px;
+  background-color: #f5f4fa;
+  color: var(--primary-text-color);
+  border: 0;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.p-buttons .button:hover,
+.p-buttons .button:focus {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+.p-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-list .title {
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 4px;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+}
+.p-list .name {
+  margin-bottom: 20px;
+  margin-top: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  color: var(--secondary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+}
+.p-list .list-el {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  border: 1px solid #eeeeee;
+}
+.p-list .list-el:nth-child(3n) {
+  margin-right: 0px;
+}
+.p-list .list-el:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.p-list .list-el:nth-last-child(-n + 3) {
+  margin-bottom: 94px;
+}
