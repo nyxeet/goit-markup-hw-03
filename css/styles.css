@@ -189,9 +189,9 @@ header {
 }
 
 .team-title {
+  margin-bottom: 50px;
   padding-top: 94px;
   margin-top: 0;
-  margin-bottom: 0;
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 36px;
@@ -201,7 +201,6 @@ header {
 }
 .team-list {
   display: flex;
-  margin-top: 50px;
 }
 .team-item {
   background-color: white;
