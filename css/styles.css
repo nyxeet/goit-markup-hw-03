@@ -93,7 +93,6 @@ header {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  margin-bottom: 94px;
 }
 .hero .title {
   padding-top: 200px;
@@ -131,9 +130,12 @@ header {
 }
 
 /* Features */
+.f-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .features-list {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .features-list .item:not(:last-child) {
@@ -162,7 +164,7 @@ header {
 
 /* Portfolio */
 .portfolio {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio .title {
@@ -186,11 +188,11 @@ header {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
 }
 
 .team-title {
   margin-bottom: 50px;
-  padding-top: 94px;
   margin-top: 0;
   color: var(--primary-text-color);
   font-weight: bold;
