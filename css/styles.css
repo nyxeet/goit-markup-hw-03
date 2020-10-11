@@ -96,7 +96,8 @@ header {
 }
 .hero .title {
   padding-top: 200px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 0;
   margin-top: 0px;
   color: #fff;
   font-family: Roboto;
@@ -180,7 +181,7 @@ header {
   display: flex;
   justify-content: center;
 }
-.portfolio-list .item:not(:last-child) {
+.portfolio-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
