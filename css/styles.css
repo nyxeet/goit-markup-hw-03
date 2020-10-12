@@ -133,7 +133,6 @@ header {
 /* Features */
 .f-section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 .features-list {
   display: flex;
@@ -166,6 +165,7 @@ header {
 /* Portfolio */
 .portfolio {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .portfolio .title {
@@ -190,6 +190,7 @@ header {
 .team {
   background-color: #f5f4fa;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -207,7 +208,6 @@ header {
 }
 .team-item {
   background-color: white;
-  margin-bottom: 94px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -244,6 +244,8 @@ header {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .address {
   margin-top: 20px;
@@ -254,10 +256,6 @@ header {
   line-height: 1.71;
 
   letter-spacing: 0.03em;
-}
-.f-cont {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer-list li:not(:last-child) {
   margin-bottom: 9px;
